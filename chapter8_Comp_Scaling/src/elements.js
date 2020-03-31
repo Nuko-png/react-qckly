@@ -20,7 +20,6 @@ export function Link(props) {
         )    
 }
 
-
 export function Logo (props) {
     
         return (
