@@ -1,31 +1,32 @@
 import React from "react";
 
-export class Button extends React.Component{
-    render(){
+export function Button (props){
+    
         return(
             <button
             className="btn btn-primary"
-            onClick={this.props.handleClick}>
-            {this.props.label}
+            onClick={props.handleClick}>
+            {props.label}
            </button>
            
             )
-    }
+}
+
+export function Link(props) {
+    
+        return (<a onClick={props.handleClick}
+                 href={props.link}> 
+                {props.label}</a>
+        )    
 }
 
 
-export class Link extends React.Component {
-    render(){
-        return <a onClick={this.props.handleClick} href={this.props.link}> 
-        {this.props.label}</a>
-    }
-}1
-
-
-export class Logo extends React.Component {
-    render(){
-        return <img onClick={this.props.handleClick} width="40"
+export function Logo (props) {
+    
+        return (
+         <img onClick={props.handleClick} width="40"
         src="images/test.jpg" href="#"/>
+        )
     }
-}
+
 

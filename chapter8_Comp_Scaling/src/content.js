@@ -6,8 +6,7 @@ const EnhancedButton = LoadWebsite(Button)
 const EnhancedLink = LoadWebsite(Link)
 const EnhancedLogo = LoadWebsite(Logo)
 
-class Content extends React.Component {
-  render() {
+function Content () {
     return (
       <div>
         <EnhancedButton label="LOL"   />
@@ -26,7 +25,6 @@ class Content extends React.Component {
         <iframe id="frame" src="" width="600" height="500"/>
       </div>
     )
-  }
 }
 
 export default Content;

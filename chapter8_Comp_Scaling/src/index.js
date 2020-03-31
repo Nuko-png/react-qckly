@@ -9,6 +9,5 @@ import css from './bootstrap.min.css';
 
 ReactDOM.render(
     <Content />,
-   
   document.getElementById('content')
 )
