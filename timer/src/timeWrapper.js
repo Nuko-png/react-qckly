@@ -36,7 +36,6 @@ export default class TimeWrapper extends React.Component{
     }
 
 
-
     render(){
         return (
             <div className="row-fluid">

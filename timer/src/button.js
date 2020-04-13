@@ -2,18 +2,14 @@
 
 import React from "react";
 
-export default class Button extends React.Component {
-    startTimer(event) {
-        return this.props.startTimer(this.props.time)
+export default function Button (props) {
+   function startTimer(event) {
+        return props.startTimer(props.time)
     }
-
-
-    render(){
         return (
-            <button type="button" className={this.props.view}
-            onClick={this.startTimer.bind(this)}>
-                {this.props.time} seconds
+            <button type="button" className={props.view}
+            onClick={() => startTimer()}>
+                {props.time} seconds
             </button>
         )
-    }
 }
